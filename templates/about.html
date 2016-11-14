@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+<body>
+<div class="container">
+    <div class="col-md-4">
+        <img src="{{ url_for('static', filename='mugshot.png') }}" alt="A mugshot of my face" width="400" height="400">
+    </div>
+    <div class="col-md-8">
+        <h1 class="over-image">Hi, I'm Sami</h1>
+        <p class="over-image">I used to study Physics</p>
+        <p class="over-image">Then I worked in Technology Transfer for a while</p>
+        <p class="over-image">During this time I realised that I'd rather be solving technical problems in my twenties</p>
+        <p class="over-image">I did a Computer Science MSc and now I'm a programmer</p>
+        <p class="over-image">I worked in high-frequency trading at an awesome company and built some trading automation software</p>
+        <p class="over-image">I'm travelling around South America right now</p>
+        <p class="over-image">When I get back to London I'm going to apply my trading knowledge to online sports betting</p>
+        <p class="over-image">I write a blog about business and technology</p>
+        <p class="over-image">I also write about my investments</p>
+        <ul class="nav navbar-nav">
+            <li><a href="https://github.com/samistart">GitHub</a></li>
+            <li><a href="https://nl.linkedin.com/in/samistart" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.goodreads.com/user/show/32367794-sami" target="_blank">Goodreads</a></li>
+            <li><a href="https://soundcloud.com/samistart" target="_blank">Soundcloud</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+{% endblock %}
+</html>

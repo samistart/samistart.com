@@ -1,0 +1,10 @@
+img {
+  max-width:400px;
+  max-height:400px;
+  width: auto;
+  height: auto;
+}
+
+.over-image {
+    font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
