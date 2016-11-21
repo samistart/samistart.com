@@ -1,13 +1,31 @@
 {% extends "layout.html" %}
 {% block body %}
 <body>
-<div class="container">
-    {% for entry in entries %}
-    <div>{{ entry }}</div>
-    {% endfor %}
-</div>
+<div class="row">
+    <div class="col-md-3 sidebar">
+        <ul>
+            {% for entry in entries %}
+            <div class = "panel panel-default">
+                <div class = "panel-body">
+                    <div class = "thumbnail">
+                        <img src = "{{ url_for('static', filename='thumbnails/stockticker.jpg') }}" class="img-responsive img-center" alt = "Trading thumbnail">
+                    </div>
 
+                    <div class = "caption">
+                        <a href="{{entry.slug}}"><h4>{{ entry.title }}</h4></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <h1>{{ current_article.title }}</h1>
+        <small>Published {{ current_article.timestamp }}</small>
+        <p> </p>
+        {% block article %}{% endblock %}
+    </div>
+    <div class="col-md-1"></div>
 </div>
 </body>
 {% endblock %}
-</html>
