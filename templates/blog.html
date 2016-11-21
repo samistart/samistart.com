@@ -24,8 +24,12 @@
         <small>Published {{ current_article.timestamp }}</small>
         <p> </p>
         {% block article %}{% endblock %}
+        <div class="footer">
+            <p>Copyright (c) 2016</p>
+        </div>
     </div>
-    <div class="col-md-1"></div>
+</div>
+<div class="col-md-1"></div>
 </div>
 </body>
 {% endblock %}
